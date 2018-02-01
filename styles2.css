@@ -1,4 +1,5 @@
 #thanksMessage, #a, #b, #c, #d {
+	padding: 15px;
 	display: none;
 }
 
@@ -7,23 +8,36 @@ body {
 }
 
 .container {
-	background-image: url("images/background10.jpg");
+	background-image: url("images/background2.png");
 	background-repeat: none;
 	background-position: center;
 	background-size: cover;
 	color: white;
-	padding-left: 100px;
 }
 
 .titleIntro {
+	padding-top: 20px;
 	text-align: center;
+	color: black;
+}
+
+h1 {
+	font-size: 42px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+form {
+	padding-left: 100px;
 }
 
 #submitButton {
 	font-size: 36px;
 	border-radius: 8px;
-	background-color: #00B3B4;
-	border: 1px solid black;
+	background-color: #531aff;
+	border: 1px solid white;
 }
 
 .checkbox input {
@@ -46,7 +60,7 @@ body {
 }
 
 .checkbox input:checked ~ .checkmark {
-	background-color: #45d3c5;
+	background-color: #ff8c1a;
 }
 
 .checkmark:after {
@@ -83,14 +97,45 @@ h2 {
 }
 
 #fullJaguar {
-	height: 150px;
+	height: 115px;
 	width: auto;
 }
 
 #fullJaguar2{
-	height: 150px;
+	height: 115px;
 	width: auto;
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 }
 
+.babyJag {
+	display: inline;
+	float: right;
+	padding: 5px;
+	height: 450px;
+	width: auto;
+}
+
+h5 {
+	font-size: 48px;
+}
+
+h6 {
+	font-size: 40px;
+}
+
+#a {
+	background-color: #ffc61a;
+}
+
+#b {
+	background-color: #1aff8c;
+}
+
+#c {
+	background-color: #c61aff;
+}
+
+#d {
+	background-color: #1ac6ff;
+}
