@@ -1,0 +1,96 @@
+#thanksMessage, #a, #b, #c, #d {
+	display: none;
+}
+
+body {
+	background-color: #d3d3d3;
+}
+
+.container {
+	background-image: url("images/background10.jpg");
+	background-repeat: none;
+	background-position: center;
+	background-size: cover;
+	color: white;
+	padding-left: 100px;
+}
+
+.titleIntro {
+	text-align: center;
+}
+
+#submitButton {
+	font-size: 36px;
+	border-radius: 8px;
+	background-color: #00B3B4;
+	border: 1px solid black;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	border-radius: 75%;
+}
+
+.checkbox:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+	background-color: #45d3c5;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkbox .checkmark:after {
+	top: 10px;
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: green;
+}
+
+.options {
+	font-size: 20px;
+	line-height: 250%;
+	padding-left: 50px;
+}
+
+h2 {
+	display: inline;
+	font-size: 42px;
+	font-family: 'Josefin Sans', sans-serif;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.col-md-6 {
+	font-size: 36px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#fullJaguar {
+	height: 150px;
+	width: auto;
+}
+
+#fullJaguar2{
+	height: 150px;
+	width: auto;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+

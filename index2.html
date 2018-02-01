@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Ubuntu" rel="stylesheet">    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles2.css" rel="stylesheet" type="text/css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="icon" href="images/jaguar.jpg">
+	<title>Personality Quiz</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="images/jaguar2.png" alt="jaguar" id="fullJaguar2">
+		</div>
+		<div class="col-md-4">
+			<div class="titleIntro">
+				<h1>Which Jaguar Jump Scientist Are You?</h1>
+				<h4>Take this quiz to find out which scientist you're most like!</h4>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<img src="images/jaguar2.png" alt="jaguar" id="fullJaguar">
+		</div>
+	</div>
+	<br>
+	<br>
+	<form id="survey">
+<!-- 	Question 1 -->
+		<h2 id="question1">What would you do if a ninja attacked?</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Karate Chop!</span>
+						<input type="radio" name="q1" value="answer1"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Sword Duel</span>
+						<input type="radio" name="q1" value="answer2"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Run away!</span>
+						<input type="radio" name="q1" value="answer3"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Cry</span>
+						<input type="radio" name="q1" value="answer4"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+<!-- 	Question 2 -->
+		<h2 id="question2">What would your super power be?</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 1</span>
+						<input type="radio" name="q2" value="answer1"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 2</span>
+						<input type="radio" name="q2" value="answer2"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 3</span>
+						<input type="radio" name="q2" value="answer3"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 4</span>
+						<input type="radio" name="q2" value="answer4"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+<!-- 	Question 3 -->
+		<h2 id="question3">Which country would you most like to visit?</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 1</span>
+						<input type="radio" name="q3" value="answer1"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 2</span>
+						<input type="radio" name="q3" value="answer2"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 3</span>
+						<input type="radio" name="q3" value="answer3"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 4</span>
+						<input type="radio" name="q3" value="answer4"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+<!-- 	Question 4 -->
+		<h2 id="question4">What's your favorite color?</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 1</span>
+						<input type="radio" name="q4" value="answer1"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 2</span>
+						<input type="radio" name="q4" value="answer2"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 3</span>
+						<input type="radio" name="q4" value="answer3"><span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="radio">
+					<label class="checkbox"><span class="options">Option 4</span>
+						<input type="radio" name="q4" value="answer4"><span class="checkmark"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<button id="submitButton" type="submit" class="btn">Submit</button>
+	</form>
+	
+	<div class="result">
+		<a name="resultJump"></a>
+		<h3 id="thanksMessage">Thanks for taking our quiz! You're most like:</h3>
+		<div id="a">
+			<h2>Student A</h2>
+			<h4>Student A is smart and outgoing. Way to go!</h4>
+		</div>
+		<div id="b">
+			<h2>Student B</h2>
+			<h4>Student B is friendly and loves to help others. Nice!</h4>
+		</div>
+		<div id="c">
+			<h2>Student C</h2>
+			<h4>Student C is bold and kind. Lucky you!</h4>
+		</div>
+		<div id="d">
+			<h2>Student D</h2>
+			<h4>Student D is funny and passionate. Hooray!</h4>
+		</div>
+	</div>
+</div>
+</body>
+</html>
