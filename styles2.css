@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-	background-image: url("images/background2.png");
+	background-image: url("images/background8.jpg");
 	background-repeat: none;
 	background-position: center;
 	background-size: cover;
@@ -18,7 +18,7 @@ body {
 .titleIntro {
 	padding-top: 20px;
 	text-align: center;
-	color: black;
+	color: #4df704;
 }
 
 h1 {
@@ -125,17 +125,17 @@ h6 {
 }
 
 #a {
-	background-color: #ffc61a;
+	background-color: #2dffde;
 }
 
 #b {
-	background-color: #1aff8c;
+	background-color: #f422ca;
 }
 
 #c {
-	background-color: #c61aff;
+	background-color: #76b4e0;
 }
 
 #d {
-	background-color: #1ac6ff;
+	background-color: #8e4848;
 }
