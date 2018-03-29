@@ -1,4 +1,4 @@
-#thanksMessage, #a, #b, #c, #d {
+#thanksMessage, #a, #b, #c, #d, #e, #f {
 	padding: 15px;
 	display: none;
 }
@@ -8,8 +8,7 @@ body {
 }
 
 .container {
-	background-image: url("images/background8.jpg");
-	background-repeat: none;
+	background-image: url("images/background2.png");
 	background-position: center;
 	background-size: cover;
 	color: white;
@@ -18,7 +17,7 @@ body {
 .titleIntro {
 	padding-top: 20px;
 	text-align: center;
-	color: #4df704;
+	color: #ff8c1a;
 }
 
 h1 {
@@ -144,3 +143,14 @@ h6 {
 #d {
 	background-color: #8e4848;
 }
+
+#e {
+	background-color: white;
+	color: #1f1f2e;
+}
+
+#f {
+	background-color: #ff99ff;
+}
+
+

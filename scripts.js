@@ -4,11 +4,15 @@ $(document).ready(function() {
 		var sam_total = 0;
 		var c_total = 0;
 		var d_total = 0;
+		var e_total = 0;
+		var f_total = 0;
 
 		$("#a").hide();
 		$("#b").hide();
 		$("#c").hide();
 		$("#d").hide();
+		$("#e").hide();
+		$("#f").hide();
 		$("#thanksMessage").hide();
 		event.preventDefault();
 
@@ -25,8 +29,12 @@ $(document).ready(function() {
 			sam_total += 1;
 		} else if (formQ1 === "answer3") {
 			c_total += 1;
-		} else {
+		} else if (formQ1 === "answer4") {
 			d_total += 1;
+		} else if (formQ1 === "answer5") {
+			e_total += 1;
+		} else {
+			f_total += 1;
 		}
 
 		if (formQ2 === "answer1") {
@@ -35,8 +43,12 @@ $(document).ready(function() {
 			c_total += 1;
 		} else if (formQ2 === "answer3") {
 			d_total += 1;
+		} else if (formQ2 === "answer4") {
+			d_total += 1;
+		} else if (formQ2 === "answer5") {
+			e_total += 1;
 		} else {
-			kiawna_total += 1;
+			f_total += 1;
 		}
 
 		if (formQ3 === "answer1") {
@@ -45,8 +57,12 @@ $(document).ready(function() {
 			d_total += 1;
 		} else if (formQ3 === "answer3") {
 			kiawna_total += 1;
+		} else if (formQ3 === "answer4") {
+			d_total += 1;
+		} else if (formQ3 === "answer5") {
+			e_total += 1;
 		} else {
-			sam_total += 1;
+			f_total += 1;
 		}
 
 		if (formQ4 === "answer1") {
@@ -55,23 +71,33 @@ $(document).ready(function() {
 			kiawna_total += 1;
 		} else if (formQ4 === "answer3") {
 			sam_total += 1;
+		} else if (formQ4 === "answer4") {
+			d_total += 1;
+		} else if (formQ4 === "answer5") {
+			e_total += 1;
 		} else {
-			c_total += 1;
+			f_total += 1;
 		}
 
 		console.log(kiawna_total);
 		console.log(sam_total);
 		console.log(c_total);
 		console.log(d_total);
+		console.log(e_total);
+		console.log(f_total);
 
-		if ((kiawna_total > sam_total) && (kiawna_total > c_total) && (kiawna_total > d_total)) {
+		if ((kiawna_total > sam_total) && (kiawna_total > c_total) && (kiawna_total > d_total) && (kiawna_total > e_total) && (kiawna_total > f_total)) {
 			$("#a").fadeToggle();
-		} else if ((sam_total > c_total) && (sam_total > d_total)) {
+		} else if ((sam_total > c_total) && (sam_total > d_total) && (sam_total > e_total) && (sam_total > f_total)) {
 			$("#b").fadeToggle();
-		} else if ((c_total > d_total)) {
+		} else if ((c_total > d_total) && (c_total > e_total) && (c_total > f_total)) {
 			$("#c").fadeToggle();
-		} else {
+		} else if ((d_total > e_total) && (d_total > f_total)) {
 			$("#d").fadeToggle();
+		} else if (e_total > f_total) {
+			$("#e").fadeToggle();
+		} else {
+			$("#f").fadeToggle();
 		}
 
 		window.scrollTo(0,document.body.scrollHeight);
